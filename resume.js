@@ -55,3 +55,26 @@ document.addEventListener("DOMContentLoaded", function () {
     skillsContainer.appendChild(skillDiv);
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const emailButton = document.getElementById("email-button");
+  const email = "deeptank09@gmail.com"; // Replace with your email address
+
+  emailButton.addEventListener("click", function () {
+    window.location.href = `mailto:${email}`;
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const downloadButton = document.getElementById("download-resume");
+  const pdfPath = "/Deep's Resume.pdf"; // Replace with the actual path to your PDF file
+
+  downloadButton.addEventListener("click", function () {
+    const link = document.createElement("a");
+    link.href = pdfPath;
+    link.download = "Deep's Resume.pdf"; // You can set the default file name here
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+});
