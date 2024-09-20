@@ -31,6 +31,7 @@ body {
   padding: 0px 10px;
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 .icon-container {
@@ -121,7 +122,7 @@ span {
 .intro button:hover {
   scale: 1.1;
 }
-.homepage-links{
+.homepage-links {
   display: flex;
   align-items: center;
 }
@@ -129,6 +130,10 @@ span {
   height: max-content;
   width: max-content;
   margin-right: 20px;
+}
+
+.homepage-links a img:hover {
+  scale: 1.1;
 }
 
 .skills-container {
@@ -189,4 +194,14 @@ span {
 }
 .certification img {
   height: 60px;
+}
+
+/* ====================================== */
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.experience-heading {
+  font-size: 30px;
 }

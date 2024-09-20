@@ -78,3 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.removeChild(link);
   });
 });
+
+function openInNewTab(url) {
+  window.open(url, "_blank");
+}
