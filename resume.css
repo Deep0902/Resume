@@ -124,7 +124,6 @@ span {
 .intro button:hover {
   scale: 1.1;
   box-shadow: 0px 0px 27px #00000020;
-
 }
 .homepage-links {
   display: flex;
@@ -208,11 +207,11 @@ span {
   display: flex;
   text-align: justify;
 }
-.experience-content:hover{
+.experience-content:hover {
   scale: 1.01;
   border-radius: 10px;
   box-shadow: 0px 0px 27px #00000015;
-
+  cursor: default;
 }
 .experience-heading {
   font-size: 30px;
@@ -223,6 +222,47 @@ span {
   margin-left: 3%;
   display: flex;
   flex-direction: column;
+}
+/* ===================================== */
+.projects-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.projects-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #e6e6fa;
+  border-radius: 10px;
+  padding: 2%;
+  width: 40%;
+}
+.projects-card ul {
+  padding-left: 5%;
+}
+.projects-card:hover {
+  scale: 1.01;
+}
+.project-heading {
+  display: flex;
+  align-items: center;
+}
+.project-heading img {
+  height: 42px;
+}
+.project-heading > span {
+  font-size: 25px;
+  margin-left: 4px;
+}
+.projects-card button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin: 8px 8px 8px 0px;
+}
+.projects-card button:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 27px #00000010;
 }
 /* ===================================== */
 .progress-container {
@@ -269,4 +309,47 @@ span {
 
 .line.active {
   background-color: #4caf50;
+}
+/* ===================================== */
+
+#education .experience-content span:nth-child(1) {
+  font-size: 30px;
+}
+#education .experience-content span:nth-child(2) {
+  font-size: 20px;
+}
+
+#education .experience-content {
+  padding-bottom: 2%;
+}
+
+#education .location {
+  font-size: 20px !important;
+}
+/* ======================================== */
+
+.interests-section{
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 0 20%;
+  justify-content: center; */
+}
+.interest-card{
+  background-color: #f7f7fc;
+    border-radius: 10px;
+    width: max-content;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 20px 10px 10px;
+}
+
+.interest-card:hover {
+  scale: 1.1;
+  cursor: default;
+  box-shadow: 0px 0px 27px #00000020;
+}
+.interest-card img{
+  height: 40px;
 }
