@@ -198,6 +198,7 @@ span {
 
 /* ====================================== */
 .experience-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: justify;
