@@ -30,10 +30,6 @@
         <img src="./icons/mortarboard-fill.svg" alt="" />
         <span class="hover-text">Education</span>
       </div>
-      <div class="icon-container" data-section="contact">
-        <img src="./icons/person-lines-fill.svg" alt="" />
-        <span class="hover-text">Contact</span>
-      </div>
     </div>
   </div>
 
@@ -73,10 +69,46 @@
     <h2>Skills</h2>
     <br />
     <div class="skills-container" id="skills-container">
-      <!-- <div class="skill">
+      <div class="skill">
         <img src="./icons/react.svg" alt="" />
         <span class="poppins-medium">React JS</span>
-      </div> -->
+      </div>
+      <div class="skill">
+        <img src="./icons/html-5.svg" alt="" />
+        <span class="poppins-medium">HTML 5</span>
+      </div>
+      <div class="skill">
+        <img src="./icons/css-3.svg" alt="" />
+        <span class="poppins-medium">CSS</span>
+      </div>
+      <div class="skill">
+        <img src="./icons/angular.svg" alt="" />
+        <span class="poppins-medium">Angular</span>
+      </div>
+      <div class="skill">
+        <img src="./icons/figma.svg" alt="" />
+        <span class="poppins-medium">Figma</span>
+      </div>
+      <div class="skill">
+        <img src="./icons/adobe-xd.svg" alt="" />
+        <span class="poppins-medium">Adobe XD</span>
+      </div>
+      <div class="skill">
+        <img src="./icons/mongodb.svg" alt="" />
+        <span class="poppins-medium">Mongo DB</span>
+      </div>
+      <div class="skill">
+        <img src="./icons/python.svg" alt="" />
+        <span class="poppins-medium">Python</span>
+      </div>
+      <div class="skill">
+        <img src="./icons/androidstudiosvg.svg" alt="" />
+        <span class="poppins-medium">Android Studio</span>
+      </div>
+      <div class="skill">
+        <img src="./icons/c.svg" alt="" />
+        <span class="poppins-medium">C++</span>
+      </div>
     </div>
     <br /><br />
     <h2>Certifications</h2>
@@ -296,31 +328,88 @@
       </div>
       <div class="projects-card">
         <div class="project-heading">
-          <img src="./icons/portfolio.svg" alt="" />
-          <span class="poppins-bold">Portfolio</span>
+          <img src="./icons/personal-expense-tracker.svg" alt="" />
+          <span class="poppins-bold">Smart Traffic Control System</span>
         </div>
         <div>
           <ul>
-            <li>A simple webpage of my resume</li>
-            <li>Basic HTML, CSS and JavaScript</li>
+            <li>
+              A prototype of automating a 4 way signal lane using IR & RF
+              sensors, Arduino Uno and LEDs.🚨
+            </li>
+            <li>
+              IR sensors detect the traffic density and automatically change the
+              green signal time on each lane.🛣️
+            </li>
+            <li>Used Python for development.🛠️</li>
+          </ul>
+        </div>
+        <div>
+          <button
+            class="poppins-medium"
+            style="color: white; background-color: #3d3d3d"
+            onclick="openInNewTab('https://github.com/Deep0902/personal-expense-tracker')"
+          >
+            Code
+          </button>
+        </div>
+      </div>
+      <div class="projects-card">
+        <div class="project-heading">
+          <img src="./icons/MeAn.png" alt="" />
+          <span class="poppins-bold">MeAn - Message Analyser</span>
+        </div>
+        <div>
+          <ul>
+            <li>
+              An Android application created using basic concepts of Natural
+              Language Processing (NLP), Artificial Intelligence (AI), Java,
+              XML, and implemented with Android Studio.
+            </li>
+            <li>
+              A message can be passed and analyzed. The app makes a POST request
+              to the hosted server, and the detected sentiments are displayed as
+              a pie chart.
+            </li>
           </ul>
         </div>
         <div style="margin-top: auto">
           <button
             class="poppins-medium"
-            style="color: white; background-color: #019863"
-            onclick="openInNewTab('/resume.html')"
-          >
-            Check it out!
-          </button>
-          <button
-            class="poppins-medium"
             style="color: white; background-color: #3d3d3d"
-            onclick="openInNewTab('https://github.com/Deep0902/Resume')"
+            onclick="openInNewTab('https://github.com/Likith2000/MeAN-Android-Application')"
           >
             Code
           </button>
-          
+        </div>
+      </div>
+      <div class="projects-card">
+        <div class="project-heading">
+          <img src="./icons/portfolio.svg" alt="" />
+          <span class="poppins-bold">Ball-Der-Dash</span>
+        </div>
+        <div>
+          <ul>
+            <li>
+              Ball-Der-Dash is similar to dodgeball. You control a ball using
+              arrow keys to dodge falling obstacles. The difficulty increases as
+              the speed of the falling obstacles rises.
+            </li>
+            <li>
+              Used concepts of OpenGL which is an extensively documented 3D
+              graphics API. This game can be called a partially enhancement of a
+              previously created game.
+            </li>
+          </ul>
+        </div>
+        <div style="margin-top: auto">
+          <button
+            class="poppins-medium"
+            style="color: white; background-color: #3d3d3d"
+            onclick="openInNewTab('https://github.com/Deep0902/CGV-Mini-Project')"
+          >
+            Code
+          </button>
         </div>
       </div>
     </div>
@@ -335,9 +424,9 @@
           <div class="line active"></div>
         </div>
         <div class="experience-content">
-          <span>BMS Institute of Technology & Management, Bangalore</span>
+          <span>Bachlor of Engineering: Computer Science - 2018 to 2022</span>
           <span class="poppins-regular"
-            >Bachlor of Engineering: Computer Science - 2018 to 2022</span
+            >BMS Institute of Technology & Management, Bangalore</span
           >
         </div>
       </div>
@@ -347,8 +436,10 @@
           <div class="line active"></div>
         </div>
         <div class="experience-content">
-          <span>Air Force School Hebbal, Bangalore</span>
-          <span class="poppins-regular">Senior Secondary Education - 2016 to 2018</span>
+          <span>Senior Secondary Education - 2016 to 2018</span>
+          <span class="poppins-regular"
+            >Air Force School Hebbal, Bangalore</span
+          >
         </div>
       </div>
       <div class="experience-card poppins-bold" style="color: #08528c">
@@ -356,42 +447,93 @@
           <div class="dot"></div>
         </div>
         <div class="experience-content">
-          <span>Air Force School Hebbal, Bangalore</span>
-          <span class="poppins-regular">Junior High School - 2005 to 2016</span>
+          <span>Junior High School - 2005 to 2016</span>
+          <span class="poppins-regular"
+            >Air Force School Hebbal, Bangalore</span
+          >
         </div>
       </div>
     </div>
-    <br>
+    <br />
     <h2>Interests</h2>
     <div class="interests-section">
       <div class="interest-card">
-        <img src="./icons/piano.svg" alt="">
+        <img src="./icons/piano.svg" alt="" />
         <span>&nbsp;Piano</span>
       </div>
       <div class="interest-card">
-        <img src="./icons/guitar.svg" alt="">
+        <img src="./icons/guitar.svg" alt="" />
         <span>Guitar</span>
       </div>
       <div class="interest-card">
-        <img src="./icons/animation.svg" alt="">
+        <img src="./icons/animation.svg" alt="" />
         <span>&nbsp;Motion Graphics</span>
       </div>
       <div class="interest-card">
-        <img src="./icons/football.svg" alt="">
+        <img src="./icons/football.svg" alt="" />
         <span>&nbsp;Football</span>
       </div>
       <div class="interest-card">
-        <img src="./icons/basketball.svg" alt="">
+        <img src="./icons/basketball.svg" alt="" />
         <span>&nbsp;Basketball</span>
       </div>
       <div class="interest-card">
-        <img src="./icons/table-tennis.svg" alt="">
+        <img src="./icons/table-tennis.svg" alt="" />
         <span>&nbsp;Table Tennis</span>
       </div>
     </div>
   </div>
-  <div id="contact" class="sections">
-    <h2>Contact</h2>
+  <div class="footer">
+    <div class="textBlock">
+      <div class="textSection">
+        <label class="poppins-semibold">About</label>
+        <br />
+        <span class="poppins-regular">
+          This is a basic webpage that is used mainly to showcase my updated CV
+        </span>
+      </div>
+      <div class="textSection">
+        <label class="poppins-semibold">Quick Links</label>
+        <br />
+        <span class="poppins-regular">
+          <ul>
+            <li>
+              <a
+                href="https://github.com/Deep0902"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub Profile
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/deeprakesh/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="mailto:deeptank09@gmail.com">Send me an Email</a>
+            </li>
+          </ul>
+        </span>
+      </div>
+      <div class="textSection">
+        <label class="poppins-semibold">Project Info</label>
+        <br />
+        <span class="poppins-regular">
+          This project is made using HTML, CSS, JavaScript and deployed on
+          Github <br />
+          <br />
+          It is a personal project and not for commercial use
+        </span>
+      </div>
+    </div>
+    <br />
+    <hr />
   </div>
   <script src="/resume.js"></script>
 </body>
