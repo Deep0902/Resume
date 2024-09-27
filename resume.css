@@ -23,7 +23,7 @@ body {
 }
 
 .sidebar {
-  background-color: #fffacd;
+  background-color: transparent;
   position: fixed;
   height: 100vh;
   right: 0;
@@ -52,7 +52,7 @@ body {
 }
 
 .sidebar > .icons img:hover {
-  background-color: #ffffff;
+  background-color: #fff597;
   box-shadow: 0px 0px 10px #00000008;
   border-radius: 50%;
   scale: 1.1;
@@ -70,29 +70,43 @@ body {
   transition: opacity 0.3s;
   pointer-events: none;
   width: max-content;
-  left: -40%;
-  bottom: 10%;
+  left: -66%;
+  bottom: 4%;
 }
 
 .icon-container:hover .hover-text {
   opacity: 1;
 }
+.icon-container.active img {
+  background-color: #fff597; /* Change this to your desired highlight color */
+  box-shadow: 0px 0px 10px #00000008;
+  border-radius: 50%;
+  scale: 1.1;
+  box-shadow: 0px 0px 27px #00000010;
+}
 
 #Home {
   display: flex;
+  align-items: center;
   flex-direction: row-reverse;
-  /* background: radial-gradient(circle, #5f90ff -70%, #ffffff 42%); */
 }
 #skill,
 #Experience,
 #contact,
+#Projects,
 #education {
-  /* background: radial-gradient(circle, #ff5fdc -70%, #ffffff 42%); */
-  padding: 0 10%;
+  padding: 0% 10%;
 }
 #Home .profile-img {
-  scale: 0.7;
   width: 50%;
+  height: 50%;
+  padding-right: 5%;
+}
+.elements {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  scale: 0.8;
 }
 #Home .intro {
   width: 50%;
@@ -106,6 +120,7 @@ h2,
 span {
   color: #25202f;
   margin: 0;
+  font-size: 20px;
 }
 #Home .intro h2 {
   font-size: 50px;
@@ -143,8 +158,10 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 4% 0%;
 }
 .skill {
+  border: 0.5px solid #e3e3e3;
   background-color: #f7f7fc;
   border-radius: 10px;
   width: max-content;
@@ -173,8 +190,10 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 2% 0%;
 }
 .certification {
+  border: 0.5px solid #e3e3e3;
   background-color: #f7f7fc;
   border-radius: 10px;
   width: max-content;
@@ -197,11 +216,11 @@ span {
 .certification span {
   font-size: 20px;
 }
-.certification img {
-  height: 60px;
-}
 
 /* ====================================== */
+.experience-section {
+  margin: 3% 0% 2% 0%;
+}
 .experience-card {
   position: relative;
   display: flex;
@@ -228,6 +247,7 @@ span {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 2% 0%;
 }
 .projects-card {
   display: flex;
@@ -277,9 +297,9 @@ span {
 .dot {
   position: absolute;
   z-index: 1;
-  width: 20px;
-  height: 20px;
-  background-color: #ddd;
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
   border-radius: 50%;
 }
 
@@ -332,10 +352,11 @@ span {
 .interests-section {
   display: flex;
   flex-wrap: wrap;
-  /* padding: 0 20%;
-  justify-content: center; */
+  margin: 3% 0%;
+  justify-content: center;
 }
 .interest-card {
+  border: 0.5px solid #e3e3e3;
   background-color: #f7f7fc;
   border-radius: 10px;
   width: max-content;
@@ -358,7 +379,7 @@ span {
 .footer {
   background-color: #e6e6fa;
   padding: 50px 80px 30px 80px;
-  color: #000000
+  color: #000000;
 }
 .textBlock {
   display: flex;
@@ -384,6 +405,29 @@ span {
 }
 .footer ul li a {
   text-decoration: none;
+  color: #000000;
+}
+/* ============================================= */
+.custom-a {
+  text-decoration: none;
+}
+
+.underline {
+  position: relative;
+  color: #8643DC;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0%; /* Adjust this value to center the underline */
+  bottom: -5px; /* Adjust this value to position the underline */
+  width: 70%; /* This sets the underline to cover 70% of the text */
+  height: 2px; /* Adjust the thickness of the underline */
+  background-color: #8643DC; /* Change this to your desired underline color */
 }
 
 /* Phone Screen CSS */
@@ -400,12 +444,7 @@ span {
     position: relative;
   }
   .footer {
-    background-color: #095339;
+    background-color: #4caf50 !important;
     padding: 50px 50px 30px 50px;
   }
-}
-
-/* ============================================= */
-.custom-a{
-  text-decoration: none;
 }

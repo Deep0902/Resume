@@ -16,6 +16,49 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const iconContainers = document.querySelectorAll(".icon-container");
+  const sections = document.querySelectorAll("section"); // Assuming your sections have a <section> tag
+
+  iconContainers.forEach((container) => {
+    container.addEventListener("click", () => {
+      const sectionId = container.getAttribute("data-section");
+      scrollToSection(sectionId);
+    });
+  });
+
+  function scrollToSection(sectionId) {
+    const sectionElement = document.getElementById(sectionId);
+    if (sectionElement) {
+      sectionElement.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5, // Adjust this value as needed
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const sectionId = entry.target.id;
+      const iconContainer = document.querySelector(
+        `.icon-container[data-section="${sectionId}"]`
+      );
+
+      if (entry.isIntersecting) {
+        iconContainer.classList.add("active");
+      } else {
+        iconContainer.classList.remove("active");
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   const emailButton = document.getElementById("email-button");

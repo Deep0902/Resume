@@ -1,6 +1,7 @@
 <head>
-  <title>Deep's Resume</title>
-  <link rel="icon" href="./icons//portfolio.svg" />
+  <title>Deep | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./icons/D2.png" />
   <link rel="stylesheet" href="./resume.css" />
   <link rel="stylesheet" href="./fonts.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,11 +21,15 @@
       </div>
       <div class="icon-container" data-section="skill">
         <img src="./icons/code-slash.svg" alt="" />
-        <span class="hover-text">Proficiencies</span>
+        <span class="hover-text">Expertise</span>
       </div>
       <div class="icon-container" data-section="Experience">
         <img src="./icons/person-workspace.svg" alt="" />
         <span class="hover-text">Experience</span>
+      </div>
+      <div class="icon-container" data-section="Projects">
+        <img src="./icons/projects.svg" alt="" />
+        <span class="hover-text">Projects</span>
       </div>
       <div class="icon-container" data-section="education">
         <img src="./icons/mortarboard-fill.svg" alt="" />
@@ -33,7 +38,8 @@
     </div>
   </div>
 
-  <div id="Home" class="sections">
+  <section id="Home" class="sections">
+    <img class="elements" src="./icons/elements.svg" alt="">
     <img class="profile-img" src="./icons/profile-image.png" alt="" />
     <div class="intro">
       <span>&nbsp;Hello! I am</span>
@@ -64,9 +70,9 @@
         </a>
       </div>
     </div>
-  </div>
-  <div id="skill" class="sections">
-    <h2>Skills</h2>
+  </section>
+  <section id="skill" class="sections">
+    <h2 class="underline">Skills</h2>
     <br />
     <div class="skills-container" id="skills-container">
       <div class="skill">
@@ -110,9 +116,7 @@
         <span class="poppins-medium">C++</span>
       </div>
     </div>
-    <br /><br />
-    <h2>Certifications</h2>
-    <br />
+    <h2 class="underline">Certifications</h2>
     <div class="certifications-container">
       <div
         class="certification"
@@ -172,16 +176,15 @@
         >
       </div>
     </div>
-    <br />
-    <br />
-  </div>
-  <div id="Experience" class="sections">
-    <h2>Experience</h2>
+    
+  </section>
+  <section id="Experience" class="sections">
+    <h2 class="underline">Experience</h2>
     <div class="experience-section">
       <div class="experience-card poppins-bold" style="color: #08528c">
         <div class="progress-container">
           <div class="dot active"></div>
-          <div class="line active"></div>
+          <div class="line"></div>
         </div>
         <div class="experience-content">
           <span class="experience-heading" style="color: #08528c"
@@ -281,8 +284,11 @@
         </div>
       </div>
     </div>
-    <h2>Personal Projects</h2>
+
     <br />
+  </section>
+  <section id="Projects" class="sections">
+    <h2 class="underline">Personal Projects</h2>
     <div class="projects-section">
       <div class="projects-card">
         <div class="project-heading">
@@ -413,10 +419,9 @@
         </div>
       </div>
     </div>
-    <br />
-  </div>
-  <div id="education" class="sections">
-    <h2>Education</h2>
+  </section>
+  <section id="education" class="sections">
+    <h2 class="underline">Education</h2>
     <div class="experience-section">
       <div class="experience-card poppins-bold" style="color: #08528c">
         <div class="progress-container">
@@ -455,7 +460,7 @@
       </div>
     </div>
     <br />
-    <h2>Interests</h2>
+    <h2 class="underline">Interests</h2>
     <div class="interests-section">
       <div class="interest-card">
         <img src="./icons/piano.svg" alt="" />
@@ -482,7 +487,7 @@
         <span>&nbsp;Table Tennis</span>
       </div>
     </div>
-  </div>
+  </section>
   <div class="footer">
     <div class="textBlock">
       <div class="textSection">
