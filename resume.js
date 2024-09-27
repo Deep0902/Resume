@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const downloadButton = document.getElementById("download-resume");
-  const pdfPath = "/Deep's Resume.pdf"; // Replace with the actual path to your PDF file
+  const pdfPath = "./Deep's Resume.pdf"; // Replace with the actual path to your PDF file
 
   downloadButton.addEventListener("click", function () {
     const link = document.createElement("a");
