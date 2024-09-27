@@ -356,8 +356,9 @@ span {
 }
 /* ============================================= */
 .footer {
-  background-color: #2f61d6;
+  background-color: #e6e6fa;
   padding: 50px 80px 30px 80px;
+  color: #000000
 }
 .textBlock {
   display: flex;
@@ -369,23 +370,19 @@ span {
 }
 .textSection label {
   font-size: 25px;
-  color: #dddddd;
 }
 .textSection span {
   padding-top: 0em;
   font-size: 15px;
-  color: #dddddd;
 }
 .footer p {
   text-align: center;
-  color: #dddddd;
 }
 .footer ul {
   margin-top: 0;
   padding-left: 1em;
 }
 .footer ul li a {
-  color: #dddddd;
   text-decoration: none;
 }
 
