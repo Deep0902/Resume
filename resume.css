@@ -320,7 +320,7 @@ span {
   width: 4px;
   height: 20px;
   border-radius: 3px;
-  background-color: #ddd;
+  background-color: #56abff;
   height: 102%;
 }
 
@@ -329,7 +329,7 @@ span {
 }
 
 .line.active {
-  background-color: #4caf50;
+  background-color: #58df5d;
 }
 /* ===================================== */
 
