@@ -124,6 +124,7 @@ span {
 }
 #Home .intro h2 {
   font-size: 50px;
+  margin-bottom: 8px;
 }
 .intro button {
   margin-top: 10px;
@@ -414,7 +415,7 @@ span {
 
 .underline {
   position: relative;
-  color: #8643DC;
+  color: #8643dc;
   display: inline-block;
   font-weight: 400;
   font-size: 40px;
@@ -427,7 +428,7 @@ span {
   bottom: -5px; /* Adjust this value to position the underline */
   width: 70%; /* This sets the underline to cover 70% of the text */
   height: 2px; /* Adjust the thickness of the underline */
-  background-color: #8643DC; /* Change this to your desired underline color */
+  background-color: #8643dc; /* Change this to your desired underline color */
 }
 
 /* Phone Screen CSS */
@@ -444,7 +445,115 @@ span {
     position: relative;
   }
   .footer {
-    background-color: #4caf50 !important;
     padding: 50px 50px 30px 50px;
+  }
+  .underline {
+    font-size: 25px;
+  }
+  #Home{
+    min-height: 100vh;
+  }
+  #Home,
+  #skill,
+  #Experience,
+  #contact,
+  #Projects,
+  #education {
+    padding: 0;
+    padding-left: 5%;
+    margin-bottom: 3%;
+  }
+  #Home h2,
+  span {
+    color: #25202f;
+    margin: 0;
+    font-size: 14px;
+  }
+  #Home .intro {
+    padding: 0;
+  }
+  #Home .intro h2 {
+    font-size: 30px;
+  }
+  .skill {
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  .skill img {
+    height: 30px;
+    margin-right: 8px;
+  }
+  .skill span {
+    font-size: 10px;
+  }
+  .certification {
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  .certification img {
+    height: 30px;
+    margin-right: 8px;
+  }
+  .certification span {
+    font-size: 10px;
+  }
+  .experience-heading {
+    font-size: 20px;
+    text-align: left;
+  }
+  .experience-about {
+    font-size: 10px;
+  }
+  .experience-content {
+    padding: 1% 7% 0% 2%;
+  }
+  .experience-details ul li {
+    font-size: 10px;
+  }
+  .projects-section {
+    flex-direction: column;
+  }
+  .projects-card {
+    width: 90%;
+    padding: 3%;
+  }
+  .project-heading img {
+    height: 32px;
+  }
+  .project-heading > span {
+    font-size: 18px;
+    margin-left: 8px;
+  }
+  .projects-card ul {
+    padding-left: 8%;
+  }
+  .projects-card ul li {
+    font-size: 15px;
+  }
+  .projects-card button {
+    padding: 8px 11px;
+    font-size: 12px;
+  }
+  #education .experience-content span:nth-child(1) {
+    font-size: 20px;
+    text-align: left;
+  }
+  #education .experience-content span:nth-child(2) {
+    font-size: 15px;
+    text-align: left;
+  }
+  .interest-card {
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  .interest-card img {
+    height: 30px;
+    margin-right: 8px;
+  }
+  .interest-card span {
+    font-size: 14px;
+  }
+  .sections{
+    min-height: unset;
   }
 }
