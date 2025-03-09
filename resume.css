@@ -18,9 +18,7 @@ body {
   margin: 0;
 }
 
-.sections {
-  min-height: 100vh;
-}
+
 
 .sidebar {
   background-color: transparent;
@@ -89,10 +87,12 @@ body {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
+  min-height: 100vh;
 }
 #skill,
 #Experience,
 #contact,
+#certifications,
 #Projects,
 #education {
   padding: 0% 10%;
