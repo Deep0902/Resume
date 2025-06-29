@@ -13,7 +13,7 @@
 </head>
 
 <body class="custom-scrollbar">
-  <div class="sidebar">
+  <nav class="sidebar animate" style="--delay: 2s">
     <div class="icons">
       <div class="icon-container" data-section="Home">
         <img src="./icons/house-heart.svg" alt="" />
@@ -40,23 +40,33 @@
         <span class="hover-text">Education</span>
       </div>
     </div>
-  </div>
+  </nav>
 
   <section id="Home" class="sections">
-    <img class="elements" src="./icons/elements.svg" alt="" />
-    <img class="profile-img" src="./icons/Image.png" alt="" />
+    <img
+      class="animate elements"
+      style="--delay: 0.8s"
+      src="./icons/elements.svg"
+      alt=""
+    />
+    <img
+      class="animate profile-img"
+      style="--delay: 0.9s"
+      src="./icons/Image.png"
+      alt=""
+    />
     <div class="intro">
-      <span>Hello! I am</span>
-      <h2>Deep Rakesh</h2>
-      <span
+      <span class="animate" style="--delay: 0.5s">Hello! I am</span>
+      <h2 class="animate" style="--delay: 0.9s">Deep Rakesh</h2>
+      <span class="animate" style="--delay: 1.5s"
         >Frontend Developer with a keen eye for visual design and user
         experience. Expertise in responsive layouts and grid systems, delivering
         seamless and engaging web pages</span
       >
       <br />
-      <button id="download-resume">Download my CV</button>
+      <button id="download-resume"  class="animate" style="--delay: 1.5s">Download my CV</button>
       <br />
-      <div class="homepage-links">
+      <div class="homepage-links animate" style="--delay: 1.8s">
         <a href="https://www.linkedin.com/in/deeprakesh/" target="_blank">
           <img
             style="height: 40px"
@@ -98,10 +108,7 @@
         <img src="./icons/figma.svg" alt="" />
         <span class="poppins-medium">Figma</span>
       </div>
-      <div class="skill">
-        <img src="./icons/adobe-xd.svg" alt="" />
-        <span class="poppins-medium">Adobe XD</span>
-      </div>
+
       <div class="skill">
         <img src="./icons/mongodb.svg" alt="" />
         <span class="poppins-medium">Mongo DB</span>
@@ -117,6 +124,18 @@
       <div class="skill">
         <img src="./icons/c.svg" alt="" />
         <span class="poppins-medium">C++</span>
+      </div>
+      <div class="skill">
+        <img src="./icons/adobe-xd.svg" alt="" />
+        <span class="poppins-medium">Adobe XD</span>
+      </div>
+      <div class="skill">
+        <img src="./icons/after-effects.svg" alt="" />
+        <span class="poppins-medium">Adobe After Effects</span>
+      </div>
+      <div class="skill">
+        <img src="./icons/premiere pro.svg" alt="" />
+        <span class="poppins-medium">Adobe Premiere Pro</span>
       </div>
     </div>
   </section>
@@ -250,6 +269,13 @@
   <section id="certifications" class="sections">
     <h2 class="underline">Certifications</h2>
     <div class="certifications-container">
+      <div
+        class="certification"
+        onclick="openInNewTab('https://www.credly.com/badges/77232754-7799-49ca-8d3b-7a8bbe835e1f')"
+      >
+        <img src="./icons/github.svg" alt="" />
+        <span class="poppins-semibold">GitHub Copilot Certification</span>
+      </div>
       <div
         class="certification"
         onclick="openInNewTab('https://www.coursera.org/account/accomplishments/certificate/M3WDJSOHN22P')"
